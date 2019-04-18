@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assigment 3</title>
+
+    <!-- Importing bootstrap, and jquery-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+
+      <script> 
+        /*creating the jquery logic to show/delete images*/
+        
+        $(document).ready(function(){
+        $(".my-col7").on('click',function(){
+        $(icon3).show();
+        })
+        $(".my-col7").on('dblclick',function(){
+        $(icon3).hide();
+        })
+    });
+        $(document).ready(function(){
+        $(".my-col8").on('click',function(){
+        $(icon4).show();
+        })
+    });
+        $(document).ready(function(){
+        $(".my-col8").on('dblclick',function(){
+        $(icon4).hide();
+        })
+    });
+</script>
+
+<!-- CSS styling for the container, rows, images, and columns-->
+    <style>
+        body {
+            margin: 30px;
+        }
+        .my-container {
+           
+            background-color: white;
+        }
+        .my-row {
+             margin: 0 auto;
+            font-size: 12px;
+            border: 3px solid white;
+            height: 200px;
+        }
+        
+        
+        /*Adding a little hover hand to show the user the squares are
+        clickable*/
+        
+        .my-col7{
+            text-align: center;
+            font-size: 9px;
+            color:white;
+            background-color: white;
+            
+            height:200px;
+
+        }
+        .my-col8{
+
+            text-align: center;
+            font-size: 9px;
+            color:white;
+            background-color: white;
+           
+            height:200px;
+        }
+       
+       
+      
+
+      /*Styling the navigation bar to make it look more workable*/
+  
+
+
+/* fix every image to the sizes and transltions needed*/
+#icon{
+  top:10%;
+    transform: translateX(-10%);
+    align-content: left;
+
+    
+    max-width:250px;
+    margin: 1% auto;
+  }
+  #icon2{
+    top:10%;
+    transform: translateX(-10%);
+    align-content: left;
+    
+    max-width:250px;
+     height:180px;
+      margin: 5% auto;
+   
+  }
+ 
+  #icon3{
+
+   top:10%;
+    transform: translateX(-10%);
+    align-content: left;
+    
+    max-width:250px;
+     height:180px;
+      margin: 5% auto;
+  }
+
+   
+  #icon4{
+   top:10%;
+    transform: translateX(-10%);
+    align-content: left;
+    
+    max-width:250px;
+     height:180px;
+      margin: 5% auto;
+   
+  }
+    </style>
+</head>
+
+<body>
+    <!-- Creating the top of the "flier"-->
+    <div class="container my-container">
+      
+        
+      <div class="row my-row">            
+            <div class="col-md-4  my-col7">
+                <div class = "col my-col10">
+                    <img src="pic1.jpeg" id="icon">
+                </div>
+                 </div>
+                <div class = "col-md-8 my-col10">
+                  <img src="pic2.png" id="icon3"style="display: none">
+                </div>
+
+                
+           
+
+          </div>
+          <div class="row my-row">
+            <div class="col-md-4  my-col8">
+                <div class = "col my-col10">
+                  <img src="pix2.jpg" id="icon2">
+                </div>
+            </div>
+
+          <div class="col-md-4  my-col10">
+                
+                 <img src="pix1.png" id="icon4"style="display: none">
+                
+
+            </div>
+
+       
+    </div>
+  </div>
+    
+           
+</body>
+
+</html>
